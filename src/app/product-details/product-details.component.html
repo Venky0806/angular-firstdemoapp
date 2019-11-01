@@ -4,8 +4,8 @@
   <h3>{{ product.name }}</h3>
   <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>
-
-  <app-product-alerts [product]="product" (notify)="onNotify()" (addtocart)="onAddToCart()">
+  <p>Available Units: {{ product.available }} </p>
+  <app-product-alerts [product]="product" (notify)="onNotify()" (addToCart)="addToCart(product)">
   </app-product-alerts>
 
 </div>

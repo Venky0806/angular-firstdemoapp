@@ -11,7 +11,7 @@ export class ProductAlertsComponent {
   
   @Input() product;
   @Output() notify = new EventEmitter();
-  @Output() addtocart = new EventEmitter();
+  @Output() addToCart = new EventEmitter();
 
   constructor() { }
 
